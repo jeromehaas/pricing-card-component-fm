@@ -1,2 +1,2 @@
-body{font-family:Montestrat-ExtraBold}
+*{box-sizing:border-box}::-moz-selection{background-color:rgba(109,114,222,.5);color:#fff;opacity:.99}::selection{background-color:rgba(109,114,222,.5);color:#fff;opacity:.99}body{overflow-x:hidden}body::-webkit-scrollbar{width:8px;border-radius:14px}body::-webkit-scrollbar-track{background:$blue-gradient}body::-webkit-scrollbar-thumb{background:transparent;box-shadow:0 0 0 100vh $black}
 /*# sourceMappingURL=global.css.map */

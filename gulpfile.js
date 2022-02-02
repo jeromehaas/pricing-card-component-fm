@@ -58,7 +58,7 @@ const stylusTask = (done) => {
 
 // JS TASK
 const jsTask = (done) => {
-	gulp.src(['./src/js/main.js'])
+	gulp.src(['./src/js/toggle.js'])
 		.pipe(plumber({ errorHandler: notifier.error }))
 		.pipe(babel({ presets: ['@babel/env'] }))
 		.pipe(concat('main.js'))

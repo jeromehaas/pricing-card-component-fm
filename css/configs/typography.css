@@ -1,2 +1,2 @@
-.heading--h1,h1{font-family:Montestrat-Bold;font-size:32px}.heading--h2,h2{color:#00f}
+*,.heading--h1,h1{font-family:Montestrat-Bold}.heading--h1,h1{font-size:32px}.heading--h2,h2{font-size:18px;line-height:28px}.card__title{font-size:18px;font-family:Montestrat-Bold}.price__amount{font-size:72px;font-family:Montestrat-Bold}@media (max-width:1000px){.price__amount{font-size:40px}}.price__dollar-sign{font-size:40px;vertical-align:middle;margin-right:8px}@media (max-width:1000px){.price__dollar-sign{font-size:30px}}.card__item{font-size:15px;line-height:28px}.button{font-family:Montestrat-Bold;font-size:13px}
 /*# sourceMappingURL=typography.css.map */
