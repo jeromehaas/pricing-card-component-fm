@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.styl","main.css"],"names":[],"mappings":"AAAA,KACC,uBAAkB,CCClB,ADCD,WACC,cAAI,CCCJ","file":"main.css","sourcesContent":["body \n\tbackground-color: purple\n\ntransition\n\tall 1s ease-in","body {\n  background-color: #800080;\n}\ntransition {\n  all: 1s ease-in;\n}\n"]}
