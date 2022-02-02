@@ -24,6 +24,7 @@ const filesPath = {
 	favicon: './src/assets/favicon/**/*.+(png|ico)',
 	fonts: './src/assets/fonts/**/*.+(ttf|woff|woff2)',
 	js: './src/js/**/*.js',
+	readme: './src/assets/readme/**/*.png',
 }
 
 // MESSAGES FOR NOTIFIER
@@ -34,7 +35,8 @@ notifier.defaults({
 		graphics: "Graphics optimized!",
 		icons: "Icons optimized!",
 		fonts: "Fonts optimized!",
-		favicon: "Favicon optimized!"
+		favicon: "Favicon optimized!",
+		readme: "Readme optimized!"
 	},
 	prefix: '===>',
 	suffix: '<===',
@@ -76,6 +78,15 @@ const graphicsTask = (done) => {
 		.pipe(svgmin())
 		.pipe(dest('./assets/graphics/'))
 		.pipe(notifier.success('graphics'))
+	done();
+}
+
+// README TASK
+const readmeTask = (done) => {
+	gulp.src(filesPath.readme)
+		.pipe(cache(imagemin()))
+		.pipe(dest('./assets/readme/'))
+		.pipe(notifier.success('readme'))
 	done();
 }
 
@@ -128,5 +139,5 @@ const watchTask = () => {
 	gulp.watch(filesPath.favicon, faviconTask).on("change", browserSync.reload);
 }
 
-exports.build = parallel(stylusTask, jsTask, graphicsTask, fontTask, faviconTask);
+exports.build = parallel(stylusTask, jsTask, graphicsTask, fontTask, faviconTask, readmeTask);
 exports.default = series(exports.build, watchTask);
