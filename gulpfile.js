@@ -120,6 +120,7 @@ const watchTask = () => {
 		server: { baseDir: './' },
 		open: false
 	});
+	gulp.watch('./index.html').on('change', browserSync.reload);
 	gulp.watch(filesPath.stylus, stylusTask).on("change", browserSync.reload);
 	gulp.watch(filesPath.js, jsTask).on("change", browserSync.reload);
 	gulp.watch(filesPath.graphics, graphicsTask).on("change", browserSync.reload);
