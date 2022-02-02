@@ -11,7 +11,7 @@ My goal in this challenge was to:
 - use gulp as task-runner
 - make an accurate estimation for this component
 
-### How to run the 
+### How to run
 ```bash
 git clone https://github.com/jeromehaas/pricing-card-component-fm.git
 cd pricing-card-component-fm
